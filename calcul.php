@@ -26,13 +26,13 @@ if(!isset($_POST["calcul"]))
                 {
                     $operation=$bot1/$bot3;
                 }        
-            if($_POST["calcul"]!=null)
+           if(isset($_POST["calcul"])!=null)
             {  
-                    if(isset($_POST["calcul"])==$operation)
+                    if($_POST["calcul"]==$operation)
                         {
                             $resultat="WIN";
                         }  
-                    if(isset($_POST["calcul"])!=$operation)
+                    if($_POST["calcul"]!=$operation)
                         {
                             $resultat="FAIL";
                         }
